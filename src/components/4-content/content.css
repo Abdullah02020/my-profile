@@ -1,0 +1,93 @@
+.conect .icon-envelope {
+  color: var(--suptitel);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.conect .titel {
+  font-size: 2.1rem;
+  color: var(--titel);
+  margin-bottom: 1rem;
+}
+.conect .suptitel {
+  color: var(--suptitel);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+}
+
+form label {
+  color: var(--suptitel);
+}
+
+form #emile,
+form #message {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-size: 1.1rem;
+}
+form #emile:focus,
+form #message:focus {
+  border: 1px solid rgb(44, 212, 191);
+}
+
+form #emile:hover,
+form #message:hover {
+  border: 1px solid rgb(44, 212, 191);
+}
+
+form #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+form button {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 2rem;
+  text-align: center;
+  font-size: 1.06rem;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63, 63, 70);
+  transition: 0.4s;
+}
+
+form button:hover {
+  scale: 0.97;
+  border: 1px solid var(--blue);
+}
+
+@media (max-width: 550px) {
+  form div.flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  form {
+    width: 100%;
+  }
+  form .em {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .supmit {
+    display: block;
+    margin: 30px auto;
+  }
+  .animation {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+.animation {
+  display: none;
+}
+}

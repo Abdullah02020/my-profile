@@ -1,0 +1,110 @@
+main.flex {
+  gap: 2.5rem;
+  align-items: start;
+}
+
+main section.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+main section.left-section button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.06rem;
+  opacity: 0.5;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+main section.left-section button:hover {
+  opacity: 1;
+}
+main section.left-section .active {
+  opacity: 1;
+  border: 1px solid var(--blue);
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0;
+}
+
+main section.right-section.flex {
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+column-gap: 25px;
+justify-content: center;
+row-gap: 2.5rem;}
+.card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  transition: 0.4s;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-color: var(--vv);
+}
+.card:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+.card img {
+  border-radius: 5px;
+}
+.card .box {
+  padding: 1rem 0.4rem;
+}
+.card .box .title {
+  color: var(--titel);
+}
+.card .box .suptitle {
+  color: var(--suptitel);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.1rem;
+}
+.card .box .icons {
+  justify-content: space-between;
+}
+
+.icon-github,
+.icon-link {
+  font-size: 1.2rem;
+  color: var(--suptitel);
+  transition: 0.4s;
+}
+.icon-github:hover,
+.icon-link:hover {
+  font-size: 1.25rem;
+  color: var(--icon-hover);
+  cursor: pointer;
+}
+
+.card a.link {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+  main.flex {
+
+align-items: center;
+    flex-direction: column;
+  }
+  main section.left-section {
+
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: center;
+  }
+  .main section.left-section button {
+    
+  }
+}
