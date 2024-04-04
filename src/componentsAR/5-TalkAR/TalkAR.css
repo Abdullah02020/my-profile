@@ -1,0 +1,66 @@
+.talk {
+  border: 1px solid #ffffff3b;
+  border-radius: 25px;
+  margin-bottom: 6rem;
+  padding: 2rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  background-color: black;
+  margin-top: 3rem;
+}
+
+.talk__header {
+  color: #fffffff0;
+  font-size: 55px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.talk__sup {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 18rem;
+  line-height: 27px;margin-bottom: 3rem;
+}
+.talk__link {
+  color: var(--about-sup);
+  line-height: 27px;
+  width: 50%;
+  margin: auto;
+
+}
+.talk__link a {
+  color: #fff;
+  border: 1px solid #ffffff4d;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  font-size: 40px
+}
+.talk__link a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+@media (max-width:1000px) {
+  .talk__sup {
+    color: var(--about-sup);
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width:720px) {
+  .talk__header {
+
+    font-size: 34px;
+
+  }
+  .talk__sup {
+width: 100%;
+  }.talk__link a {
+
+    padding: 1rem;
+
+    font-size: 13px;
+  }
+}

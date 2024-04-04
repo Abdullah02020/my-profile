@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./header.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [showModel, setshowModel] = useState(false);
   const [them, setthem] = useState("dark");
@@ -30,30 +31,34 @@ const Header = () => {
         }}
         className="menu icon-menu flex"
       ></button>
-      <div />
-
-      <nav>
-        <ul className="flex">
-          <li>
-            <a href="">about</a>
-          </li>
-          <li>
-            <a href="">articles</a>
-          </li>
-          <li>
-            <a href="">projects</a>
-          </li>
-          <li>
-            <a href="">speaking</a>
-          </li>
-          <li>
-            <a href="">contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button className="mode flex">
-        <span className="icon-moon-o" />
-      </button>
+      <div className="flex header-img">
+        <img src="./about-page.png" alt="" />
+        <div className="text">
+          <h1>Abdullah Mohammed</h1>
+          <p>webdesinger</p>
+        </div>
+      </div>
+      <div className="flex">
+        <nav>
+          <ul className="flex">
+            <li>
+              <Link to="/">home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>  <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/conecct">speaking</Link>
+            </li>
+          
+          </ul>
+        </nav>
+        <button className="mode flex">
+          <span className="icon-moon-o" />
+        </button>
+      </div>
 
       {showModel && (
         <div className="fixed">
@@ -67,19 +72,16 @@ const Header = () => {
               />
             </li>
             <li>
-              <a href="home">about</a>
+              <Link to="/">home</Link>
             </li>
             <li>
-              <a href="">articles</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="">projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="">speaking</a>
-            </li>
-            <li>
-              <a href="">contact</a>
+              <Link to="/conecct">speaking</Link>
             </li>
           </ul>
         </div>

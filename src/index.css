@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 html {
   box-sizing: border-box;
@@ -44,6 +44,9 @@ html {
   --icon-hover: #d4d4d8;
   --bg-bt: rgba(36, 37, 46, 1);
   --vv: #ffffff00;
+  --about--title : #fffffff0;
+  --about-sup:  rgba(255, 255, 255, 0.5);
+  --about-sup-2: #888888;
 }
 * {
   margin: 0;
@@ -62,6 +65,9 @@ html {
   --blue: rgb(0, 149, 246);
   --icon-hover: #333;
   --bg-bt: rgba(36, 37, 46, 1);
+  --about--title: rgb(39 39 42);
+  --about-sup: rgba(39, 39, 42);
+  --about-sup-2: #fff;
 
 }
 
@@ -70,13 +76,13 @@ body {
   letter-spacing: 1px;
   color: #fff;
 }
+.section__padding {
+padding-bottom: 6rem;
+}
 .container {
-  border: 1px solid var(--border);
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--sec-color);
-  padding: 0 3rem;
+  padding: 0 4rem;
 }
 
 .line {
@@ -163,5 +169,7 @@ a {
 .send  {
 display: flex;
 align-items: center;
-height: 55px;
+height: 55vh;
 }
+
+

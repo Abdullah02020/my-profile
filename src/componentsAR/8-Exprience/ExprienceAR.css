@@ -1,0 +1,45 @@
+.ex {
+  direction: rtl;
+}
+.ex .ex-header {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.ex h1 {
+  color: var(--about--title);
+}
+
+.ex__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.ex__box:not(:last-child) {
+  border-bottom: 1px solid #ffffff2c;
+  padding-bottom: 30px;
+}
+.ex__box p {
+  color: var(--about-sup);
+  font-weight: 600;
+}
+.ex__box .box__det {
+  width: 740px;
+}
+.ex__box .date {
+}
+.ex__box .box__det .job-title {padding-bottom: 10px;
+}
+.ex__box .box__det .jop-sup {
+}
+.ex__box .box__det .job-dec {    padding-top: 25px;
+  line-height: 30px;
+}
+
+@media (max-width:940px) {
+  .ex__box {
+  gap: 0.7rem;
+  }
+}

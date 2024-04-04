@@ -1,54 +1,49 @@
 import "./hero.css";
-import Lottie from "lottie-react";
-import lap from "../../../public/lap.json";
-import { useRef } from "react";
-import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { color } from "framer-motion";
+Aos.init({ duration: 1000, delay: 400, mirror: true });
+import {
+  FaGitAlt,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaSass,
+} from "react-icons/fa6";
+
 const Hero = () => {
-  const lottieRef = useRef();
-
   return (
-    <section  className="hero flex">
-      <div className="left-section">
-        <div className="avatar flex">
-          <motion.img
-            initial={{ transform: "scale(0)" }}
-            animate={{ transform: "scale(1.1)" }}
-            transition={{ damping: 6, type: "spring", stiffness: 100 }}
-            className="img-avater"
-            src="public/abdullah.png"
-            alt=""
-          />
-
-          <div className="icon-verified"></div>
-        </div>
-        <motion.h1 className="titel">
-          software desiger,founder,and amateur astronaut.
-        </motion.h1>
-        <p className="sup-title">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-          aspernatur eligendi hic blanditiis aliquid ratione unde assumenda quas
-          sunt corrupti, culpa commodi odio veniam repellendus alias tenetur
-          nam, in repellat.
-        </p>
-        <div className="icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin-square"></div>
-        </div>
-      </div>
-      <div className="right-section animtion">
-        <Lottie
-          lottieRef={lottieRef}
-          className=""
-          onLoadedImages={() => {
-            // @ts-ignore
-            // https://lottiereact.com/
-            lottieRef.current.setSpeed(0.5);
-          }}
-          animationData={lap}
-        />
-      </div>
+    <section className="hero">
+      <h1 data-aos="fade-down">
+        Hey, I’m Abdullah. <br />
+        I'm a Designer & Developer.
+      </h1>
+      <p data-aos="fade-up">
+        Abdullah Mohammed is a versatile designer & developer based in the Yamen,
+        dedicated to crafting innovative and visually appealing digital
+        experiences.
+      </p>
+      <ul className="flex">
+        <li style={{ color: "#ff3400" }} data-aos="fade-up" data-aos-delay="400" >
+          <FaHtml5 />
+        </li>
+        <li style={{ color: "#0067f1" }}  data-aos="fade-up" data-aos-delay="450">
+          <FaCss3 />
+        </li>
+        <li style={{ color: "#fede23" }}  data-aos="fade-up" data-aos-delay="500">
+          <FaJs />
+        </li>
+        <li style={{ color: "#0067f1" }}  data-aos="fade-up" data-aos-delay="550">
+          <FaReact />
+        </li>
+        <li style={{ color: "#df6195" }}  data-aos="fade-up" data-aos-delay="600">
+          <FaSass />
+        </li>
+        <li style={{ color: "#ff4013" }}  data-aos="fade-up" data-aos-delay="600">
+          <FaGitAlt />
+        </li>
+      </ul>
     </section>
   );
 };

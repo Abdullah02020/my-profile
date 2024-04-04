@@ -11,10 +11,18 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^3.0.0-beta.6",
     "framer-motion": "^11.0.5",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

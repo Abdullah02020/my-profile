@@ -1,13 +1,12 @@
 header.flex {
   justify-content: space-between;
-  padding: 0 2.4rem;
+  padding: 8px 1rem;
   margin-top: 1.2rem;
+  border: 1px solid var(--about-sup);
+  border-radius: 20px
 }
 header.flex nav {
-  background-color: var(--bgheader);
   padding: 0.77rem 1.6rem;
-  border-radius: 55px;
-  box-shadow: 1px 1px 40px #2323242a;
 }
 header.flex ul.flex {
   gap: 16px;
@@ -57,12 +56,28 @@ header .icon-close:hover {
   color: crimson;
   rotate: 180deg;
 }
+
+.header-img {
+  gap: 10px;
+}
+.header-img img {
+  width: 40px;
+  border-radius: 7px;
+}
+.header-img h1 {
+  font-size: 18px;
+  color: var(--about--title);
+}
+.header-img p {
+  color: var(--about-sup);
+}
 /* Model -- pop up */
 header .fixed {
   position: fixed;
   inset: 0;
   background-color: rgba(40, 40, 48, 0.91);
   backdrop-filter: blur(8px);
+  z-index: 1;
 }
 
 @keyframes popUp {
@@ -112,16 +127,20 @@ header .fixed ul.model li a {
   header.flex .menu {
     display: block;
   }
+  .header-img {text-align: center;}
+  .header-img img {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
-.right-section {
-  display: none;
-}
-}
-@media (max-width: 500px) {
-  section.hero .titel {
-    font-size: 2.4rem;
-    color: var(--titel);
-    line-height: 3.3rem;
-    margin: 24px 0;}
+  .right-section {
+    display: none;
+  }
+  .header-img h1{
+font-size: 15px;
+padding-bottom: 4px;
+  }
+  .header-img p {
+    font-size: 14px;
+  }
 }

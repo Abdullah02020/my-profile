@@ -1,0 +1,148 @@
+header.flex {
+  justify-content: space-between;
+  padding: 8px 1rem;
+  margin-top: 1.2rem;
+  border: 1px solid var(--about-sup);
+  border-radius: 20px
+}
+header.flex nav {
+  padding: 0.77rem 1.6rem;
+}
+header.flex ul.flex {
+  gap: 16px;
+}
+header.flex ul li a {
+  text-transform: capitalize;
+  color: var(--titel);
+  font-size: 0.88rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+header.flex nav ul li a:hover {
+  font-size: 0.9rem;
+  opacity: 1;
+  color: var(--blue);
+font-weight: 700;
+letter-spacing: 1.5px;
+}
+
+header.flex .menu {
+  display: none;
+}
+/* icon buttons */
+header .icon-menu,
+header .mode {
+  background-color: var(--bgheader);
+  height: 2.4rem;
+  width: 2.4rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--suptitel);
+  border: 1px solid rgba(244, 165, 69, 0.24);
+  transition: 0.4s;
+}
+header .icon-menu:hover,
+header .mode:hover {
+  color: var(--titel);
+  border: 1px solid rgba(244, 165, 69, 0.9);
+}
+
+header .icon-close {
+  font-size: 1.3rem;
+  color: var(--suptitel);
+  transition: 0.5s;
+}
+header .icon-close:hover {
+  font-size: 1.6rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+.header-img {
+  gap: 10px;
+}
+.header-img img {
+  width: 40px;
+  border-radius: 7px;
+}
+.header-img h1 {
+  font-size: 18px;
+  color: var(--about--title);
+}
+.header-img p {
+  color: var(--about-sup);
+}
+/* Model -- pop up */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.91);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+@keyframes popUp {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.model {
+  animation: popUp 0.7s 1;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--sec-color);
+}
+
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.model li:last-child {
+  border: none;
+}
+header .fixed ul.model li:first-child {
+  text-align: right;
+  border: none;
+  padding-top: 0.2rem;
+}
+header .fixed ul.model li a {
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header.flex .menu {
+    display: block;
+  }
+  .header-img {text-align: center;}
+  .header-img img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .right-section {
+    display: none;
+  }
+  .header-img h1{
+font-size: 15px;
+padding-bottom: 4px;
+  }
+  .header-img p {
+    font-size: 14px;
+  }
+}

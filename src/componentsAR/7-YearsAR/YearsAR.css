@@ -1,0 +1,39 @@
+.years {
+  justify-content: space-between;
+  background-color: #101010;
+  height: 125px;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  border-radius: 30px;
+  margin-bottom: 4rem;
+  height: 100%;
+  gap: 1.5rem;
+}
+.years .years__box {
+  cursor: pointer;
+}
+.years .years__box h1 {
+  background: linear-gradient(
+    359deg,
+    rgba(114, 24, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  text-align: center;
+}
+.years .years__box p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: rgb(255 255 255 / 50%);
+  font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .years {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
