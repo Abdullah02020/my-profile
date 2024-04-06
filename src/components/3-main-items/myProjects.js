@@ -24,18 +24,25 @@ export const myProjects = [
     git: "https://github.com/Abdullah02020/web-3",
     sup: "Harness the power of decentralization with Status,",
   },
-
+  {
+    title: "Nike Store",
+    cat: "react",
+    imgPath: "./17.png",
+    link: "https://nike-stor.web.app/",
+    git: "https://github.com/Abdullah02020/Nike",
+    sup: "Step into the world of Nike. Discover the latest in athletic fashion and innovation.",
+  },
   {
     title: "Brew & Bean - Coffee Shop",
     cat: "react",
     imgPath: "./2.png",
-    sup: "The virtual cafe experience, brewed with React.",
+    sup: "Coming soon: A unique virtual cafe experience.",
   },
   {
     title: "Pawfect Supplies - Pet Essentials",
     cat: "react",
     imgPath: "./3.png",
-    sup: "React-powered shopping for your furry friends.",
+    sup: "Coming soon: A new way to shop for your furry friends.",
   },
   {
     title: "Worksquare",

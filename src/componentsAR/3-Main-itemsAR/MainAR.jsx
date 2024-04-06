@@ -62,45 +62,45 @@ function MainAR() {
         </button> */}
       </section>
       <section className="flex right-section">
+        <div className=""></div>
         <AnimatePresence>
-          {arr.map((item) => (
-            <motion.article
-              layout
-              initial={{ transform: "scale(0.4)" }}
-              animate={{ transform: "scale(1)" }}
-              transition={{ type: "spring", damping: 8, stiffness: 50 }}
-              key={item.imgPath}
-              className="card"
-            >
-              <img src={item.imgPath} alt="" />
-              <div className="box">
-                <h1 className="title">{item.title}</h1>
-                <p className="suptitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                  rerum ipsa harum?
-                </p>
-                <div className="flex icons">
-                  <div style={{ gap: "11px" }} className="flex">
-                    <div className="icon-link"></div>
-                    <a
-                      className="icon-github"
-                      href={item.git}
-                      target="blank"
-                    ></a>
+          {arr.map((item) => {
+            return (
+              <motion.article
+                layout
+                initial={{ transform: "scale(0.4)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                key={item.imgPath}
+                className="card"
+              >
+                <img src={item.imgPath} alt="" />
+                <div className="box">
+                  <h1 className="title">{item.title}</h1>
+                  <p className="suptitle">{item.sup}</p>
+                  <div className="flex icons">
+                    <div style={{ gap: "11px" }} className="flex">
+                      <div className="icon-link"></div>
+                      <a
+                        className="icon-github"
+                        href={item.git}
+                        target="blank"
+                      ></a>
+                    </div>
+                    <a className="link flex" href={item.link} target="blank">
+                      Demo
+                      <span
+                        style={{ alignSelf: "end" }}
+                        className="icon-arrow-right"
+                      >
+                        {" "}
+                      </span>
+                    </a>
                   </div>
-                  <a className="link flex" href={item.link} target="blank">
-                    Demo
-                    <span
-                      style={{ alignSelf: "end" }}
-                      className="icon-arrow-right"
-                    >
-                      {" "}
-                    </span>
-                  </a>
                 </div>
-              </div>
-            </motion.article>
-          ))}
+              </motion.article>
+            );
+          })}
         </AnimatePresence>
       </section>
     </main>
